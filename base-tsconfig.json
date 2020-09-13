@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "src": ["."],
+      "components": ["./components"],
+      "constants": ["./constants"],
+      "services": ["./services"],
+      "store": ["./store"],
+      "types": ["./types"]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../../constants/styles';
+
+.sudoku_cell {
+  display: inline-block;
+  float: left;
+  width: $cellWidth;
+  height: $cellWidth;
+  line-height: $cellWidth;
+  margin: 0px;
+  background-color: $white;
+  font-size: $cellFontSize;
+  font-weight: bold;
+  border-style: solid;
+  color: $black;
+  border-color: $black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cursor_not_allowed {
+  cursor: not-allowed;
+}
+
+.active_cell {
+  background-color: $grayLight;
+}
+
+.color_dark_gray {
+  color: $darkGray;
+}
+
+

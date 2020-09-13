@@ -1,0 +1,27 @@
+@import '../../../../constants/styles';
+
+.sudoku_buttons {
+  display: flex;
+  max-width: $sudokuWidth;
+  margin: 24px auto 8px;
+
+  & .sudoku_button {
+    height: $cellWidth;
+    line-height: $cellWidth;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: $black;
+    border: 2px solid $gray;
+    margin-right: 8px;
+    cursor: pointer;
+
+    &:active {
+      background-color: $grayLight;
+    }
+  }
+
+  & .sudoku_button_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

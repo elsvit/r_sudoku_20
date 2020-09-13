@@ -17,9 +17,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./src"
   },
+  "extends": "./base-tsconfig.json",
   "include": [
-    "src"
+    "src/**/*",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "webpack",
+    "jest"
   ]
 }

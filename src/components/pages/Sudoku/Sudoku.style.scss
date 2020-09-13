@@ -1,0 +1,46 @@
+@import '../../../constants/styles';
+
+.sudoku_title {
+  display: block;
+  margin: 64px auto 8px;
+  color: $darkGray;
+  font-size: 32px;
+  text-align: center;
+}
+
+.sudoku_box {
+  display: block;
+  position: relative;
+  width: $sudokuWidth;
+  height: $sudokuHeight;
+  color: #00ff20;
+  margin: 24px auto 8px;
+  padding: 0px;
+}
+
+.show_rules_btn {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  cursor: pointer;
+  color: $green;
+  padding: 4px;
+  background-color: $white;
+
+  &:active {
+    background-color: $grayLight;
+  }
+}
+
+.sudoku_rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $grayLight;
+  border: 2px solid $darkGray;
+  color: $darkGray;
+  padding: 16px;
+  text-align: justify;
+}
